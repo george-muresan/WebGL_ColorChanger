@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf‐8" />
+    <title>Homework1</title>
+    
+</head>
+
+<body onload="initGL()">
+    <center>
+        <strong> Use Sliders to Change Graphic Context Area Color <br /> </strong>
+        <subtitle> George Muresan <br /> </subtitle>
+
+        <canvas id="graphicCanvas" width="640" height="480" style="border:1px dashed">
+
+            You only see this message if your browser does not support WebGL
+
+        </canvas>
+
+        <form>
+            Red:<input type="range" name="red" min="0" max="1" value=".5" class="slider" id="REDid" step=".01" oninput="REDidDisplay.value = REDid.value" />
+            <output id="REDidDisplay"></output>
+        </form>
+
+        <form>
+            Green: <input type="range" name="red" min="0" max="1" value=".5" class="slider" id="GREENid" step=".01" oninput="GREENidDisplay.value = GREENid.value" />
+            <output id="GREENidDisplay"></output>
+        </form>
+
+        <form>
+            Blue: <input type="range" name="red" min="0" max="1" value=".5" class="slider" id="BLUEid" step=".01" oninput="BLUEidDisplay.value = BLUEid.value" />
+            <output id="BLUEidDisplay"></output>
+        </form>
+
+        <script src="hw1.js"></script>
+    </center>
+</body>
+
+</html>
+
+
+
